@@ -1,0 +1,182 @@
+{
+  "historical_projects": [
+    {
+      "id": "hist-ml-01",
+      "title": "Automated Brain Tumor Detection via CNN",
+      "category": "AI/ML",
+      "team_size": 3,
+      "complexity": "Hard",
+      "planned_days": 35,
+      "actual_days": 42,
+      "delay_days": 7,
+      "key_bottlenecks": [
+        "Data preprocessing & annotation took 6 extra days due to unbalanced slices",
+        "Hyperparameter tuning GPU quota exhaustion"
+      ],
+      "milestone_delays": {
+        "Data Cleaning and Preprocessing": 6,
+        "Model Architecture & Training": 3,
+        "Documentation & Paper Draft": -2
+      },
+      "review_scores": {
+        "Literature Review": 9.2,
+        "Methodology & Implementation": 8.8,
+        "Evaluation & Testing": 8.5,
+        "Documentation": 8.0,
+        "Presentation": 9.0
+      },
+      "lessons_learned": "Allocate at least 30% of total project time to data quality and validation."
+    },
+    {
+      "id": "hist-ml-02",
+      "title": "Customer Churn Prediction in Telecommunications",
+      "category": "AI/ML",
+      "team_size": 2,
+      "complexity": "Medium",
+      "planned_days": 28,
+      "actual_days": 30,
+      "delay_days": 2,
+      "key_bottlenecks": [
+        "Feature engineering validation across skewed demographic records"
+      ],
+      "milestone_delays": {
+        "Feature Engineering and Selection": 3,
+        "Testing & Baseline Benchmarks": -1
+      },
+      "review_scores": {
+        "Literature Review": 8.5,
+        "Methodology & Implementation": 9.0,
+        "Evaluation & Testing": 9.2,
+        "Documentation": 8.7,
+        "Presentation": 8.9
+      },
+      "lessons_learned": "Automated feature importance checks saved 4 days during iteration."
+    },
+    {
+      "id": "hist-web-01",
+      "title": "Decentralized Campus Resource Sharing Platform",
+      "category": "Web Development",
+      "team_size": 4,
+      "complexity": "Medium",
+      "planned_days": 30,
+      "actual_days": 34,
+      "delay_days": 4,
+      "key_bottlenecks": [
+        "Authentication & role-based permission sync between backend and frontend state"
+      ],
+      "milestone_delays": {
+        "API Integration & Auth": 4,
+        "UI Component Library": -1,
+        "System Testing": 1
+      },
+      "review_scores": {
+        "System Design": 9.0,
+        "Implementation": 8.6,
+        "Testing Coverage": 7.8,
+        "Documentation": 8.9
+      },
+      "lessons_learned": "Contract-first OpenAPI mocking prevents UI blocking while backend is in progress."
+    },
+    {
+      "id": "hist-iot-01",
+      "title": "Smart Agricultural Moisture & Micro-climate Monitoring",
+      "category": "IoT",
+      "team_size": 3,
+      "complexity": "Hard",
+      "planned_days": 40,
+      "actual_days": 49,
+      "delay_days": 9,
+      "key_bottlenecks": [
+        "Hardware sensor calibration drift and packet loss in mesh network"
+      ],
+      "milestone_delays": {
+        "Hardware Interfacing": 5,
+        "Cloud Gateway Firmware": 4
+      },
+      "review_scores": {
+        "Hardware Robustness": 8.8,
+        "Data Pipeline": 8.4,
+        "Documentation": 8.2
+      },
+      "lessons_learned": "Always test hardware in simulated field noise prior to review 1."
+    },
+    {
+      "id": "hist-research-01",
+      "title": "Comparative Study on Transformer Quantization Methods",
+      "category": "Research",
+      "team_size": 2,
+      "complexity": "Hard",
+      "planned_days": 30,
+      "actual_days": 36,
+      "delay_days": 6,
+      "key_bottlenecks": [
+        "Inconsistent benchmark suites and statistical significance convergence"
+      ],
+      "milestone_delays": {
+        "Literature Taxonomy": 1,
+        "Empirical Benchmark Runs": 5
+      },
+      "review_scores": {
+        "Literature Review": 9.6,
+        "Experimental Design": 9.0,
+        "Analysis & Discussion": 8.7
+      },
+      "lessons_learned": "Pre-script reproducible seeds before running matrix evaluations."
+    }
+  ],
+  "standard_rubrics": [
+    {
+      "category": "All",
+      "criteria": [
+        {
+          "id": "rub-01",
+          "name": "Problem Formulation & Objectives",
+          "weight": 15,
+          "description": "Clear problem statement, research/engineering motivation, scope boundaries, and measurable success metrics.",
+          "deliverables": ["Project Proposal Document", "Requirement Specification (SRS)"],
+          "phase": "Problem Definition"
+        },
+        {
+          "id": "rub-02",
+          "name": "Literature Review & Prior Art",
+          "weight": 15,
+          "description": "Comprehensive comparative survey of existing methodologies, citing peer-reviewed benchmarks.",
+          "deliverables": ["Literature Review Chapter", "Comparative Table"],
+          "phase": "Literature Survey"
+        },
+        {
+          "id": "rub-03",
+          "name": "System Architecture & Design",
+          "weight": 20,
+          "description": "Sound modular design, data flow diagrams, schema design, and technical trade-off justification.",
+          "deliverables": ["Architecture Diagram", "Component Specification"],
+          "phase": "Design & Architecture"
+        },
+        {
+          "id": "rub-04",
+          "name": "Methodology & Implementation",
+          "weight": 25,
+          "description": "High code quality, execution of ML models or backend services, algorithmic correctness.",
+          "deliverables": ["Code Repository", "Execution Pipeline", "Trained Models / App Build"],
+          "phase": "Implementation"
+        },
+        {
+          "id": "rub-05",
+          "name": "Rigorous Evaluation & Testing",
+          "weight": 15,
+          "description": "Ablation tests, confusion matrix, F1/accuracy metrics, unit & integration test coverage.",
+          "deliverables": ["Evaluation Report", "Test Results & Metrics Charts"],
+          "phase": "Testing & Validation"
+        },
+        {
+          "id": "rub-06",
+          "name": "Documentation & Viva Presentation",
+          "weight": 10,
+          "description": "Comprehensive final report adhering to academic formatting guidelines and structured presentation slides.",
+          "deliverables": ["Final Thesis / Report (PDF)", "Slide Deck & Live Demo"],
+          "phase": "Documentation & Viva"
+        }
+      ]
+    }
+  ]
+}
